@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Home</title>
+</head>
+
+<body>
+    <br><br><br><br><br><br>
+    <form action="{{ url_for('authLogin')}}" method="post">
+        <input type="email" name="email" placeholder="Email...."><br><br>
+        <input type="password" name="password" placeholder="Password...."><br><br>
+        <input type="submit" value="Login">
+    </form>
+    <a href="{{ url_for('signup')}}">Create an account?</a>
+
+
+</body>
+
+</html>
