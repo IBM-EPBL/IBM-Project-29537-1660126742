@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Home</title>
+</head>
+
+<body>
+    <br><br><br><br><br><br>
+    <form action="{{ url_for('Signup')}}" method="post">
+        <input type="name" name="name" placeholder="Name...." required><br><br>
+        <input type="radio" name="gender" value="Male" Checked>Male
+        <input type="radio" name="gender" value="Female">Female<br><br>
+        <input type="text" name="age" placeholder="Age...." required><br><br>
+        <input type="email" name="email" placeholder="Email...." required><br><br>
+        <input type="password" name="password" placeholder="Password...." required><br><br>
+        <input type="submit" value="Login">
+    </form><br>
+    <a href="{{ url_for('hello_world')}}">Already have an account?</a>
+
+
+</body>
+
+</html>
